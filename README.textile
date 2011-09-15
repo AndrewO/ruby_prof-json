@@ -1,0 +1,17 @@
+h1. RubyProf/JSON
+
+This is a small project that adds a JSON printer to RubyProf to enable easy processing and querying of profiled sessions. Note that the JSON schema may change.
+
+h2. Usage
+
+For now (at least), usage is limited to scripts that directly call RubyProf's API (and not the `ruby_prof` script—I can't see an easy way to register a new formatter without directly manipulating the script).
+
+<pre><code>
+# Assuming `result` is a RubyProf::Result
+printer = RubyProf::JsonPrinter.new(result)
+printer.print(output)
+</code></pre>
+
+h2. Example
+
+See "the prime number example":examples/prime.json.

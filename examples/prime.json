@@ -1,0 +1,595 @@
+{
+  "threads": [
+    {
+      "methods": [
+        {
+          "total_time": 0.382603,
+          "class": "JsonPrinterTest",
+          "source_file": "test/json_printer_test.rb",
+          "method": "setup",
+          "called": 1,
+          "parents": [
+
+          ],
+          "self_time": 2.1e-05,
+          "line": 15,
+          "children": [
+            {
+              "total_time": 0.193215,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "run_primes",
+              "called": 1,
+              "self_time": 6.0e-06,
+              "line": 46,
+              "wait_time": 0.0
+            },
+            {
+              "total_time": 0.189367,
+              "class": "JsonPrinterTest",
+              "source_file": "test/json_printer_test.rb",
+              "method": "go",
+              "called": 1,
+              "self_time": 1.0e-05,
+              "line": 7,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.382572,
+          "class": "Object",
+          "source_file": "./test/prime.rb",
+          "method": "run_primes",
+          "called": 2,
+          "parents": [
+            {
+              "total_time": 0.189357,
+              "class": "JsonPrinterTest",
+              "source_file": "test/json_printer_test.rb",
+              "method": "go",
+              "called": 1,
+              "self_time": 6.0e-06,
+              "line": 7,
+              "wait_time": 0.0
+            },
+            {
+              "total_time": 0.193215,
+              "class": "JsonPrinterTest",
+              "source_file": "test/json_printer_test.rb",
+              "method": "setup",
+              "called": 1,
+              "self_time": 6.0e-06,
+              "line": 15,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 1.2e-05,
+          "line": 46,
+          "children": [
+            {
+              "total_time": 0.380085,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "find_primes",
+              "called": 2,
+              "self_time": 7.0e-06,
+              "line": 24,
+              "wait_time": 0.0
+            },
+            {
+              "total_time": 0.002475,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "make_random_array",
+              "called": 2,
+              "self_time": 1.1e-05,
+              "line": 7,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.380085,
+          "class": "Object",
+          "source_file": "./test/prime.rb",
+          "method": "find_primes",
+          "called": 2,
+          "parents": [
+            {
+              "total_time": 0.380085,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "run_primes",
+              "called": 2,
+              "self_time": 7.0e-06,
+              "line": 46,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 7.0e-06,
+          "line": 24,
+          "children": [
+            {
+              "total_time": 0.380078,
+              "class": "Array",
+              "source_file": "ruby_runtime",
+              "method": "select",
+              "called": 2,
+              "self_time": 0.001538,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.380078,
+          "class": "Array",
+          "source_file": "ruby_runtime",
+          "method": "select",
+          "called": 2,
+          "parents": [
+            {
+              "total_time": 0.380078,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "find_primes",
+              "called": 2,
+              "self_time": 0.001538,
+              "line": 24,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.001538,
+          "line": 0,
+          "children": [
+            {
+              "total_time": 0.37854,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "is_prime",
+              "called": 2000,
+              "self_time": 0.002603,
+              "line": 16,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.37854,
+          "class": "Object",
+          "source_file": "./test/prime.rb",
+          "method": "is_prime",
+          "called": 2000,
+          "parents": [
+            {
+              "total_time": 0.37854,
+              "class": "Array",
+              "source_file": "ruby_runtime",
+              "method": "select",
+              "called": 2000,
+              "self_time": 0.002603,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.002603,
+          "line": 16,
+          "children": [
+            {
+              "total_time": 0.375493,
+              "class": "Integer",
+              "source_file": "ruby_runtime",
+              "method": "upto",
+              "called": 2000,
+              "self_time": 0.292475,
+              "line": 0,
+              "wait_time": 0.0
+            },
+            {
+              "total_time": 0.000444,
+              "class": "Fixnum",
+              "source_file": "ruby_runtime",
+              "method": "-",
+              "called": 2000,
+              "self_time": 0.000444,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.375493,
+          "class": "Integer",
+          "source_file": "ruby_runtime",
+          "method": "upto",
+          "called": 2000,
+          "parents": [
+            {
+              "total_time": 0.375493,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "is_prime",
+              "called": 2000,
+              "self_time": 0.292475,
+              "line": 16,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.292475,
+          "line": 0,
+          "children": [
+            {
+              "total_time": 0.051727,
+              "class": "Fixnum",
+              "source_file": "ruby_runtime",
+              "method": "%",
+              "called": 155239,
+              "self_time": 0.051727,
+              "line": 0,
+              "wait_time": 0.0
+            },
+            {
+              "total_time": 0.031291,
+              "class": "Fixnum",
+              "source_file": "ruby_runtime",
+              "method": "==",
+              "called": 155239,
+              "self_time": 0.031291,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.189367,
+          "class": "JsonPrinterTest",
+          "source_file": "test/json_printer_test.rb",
+          "method": "go",
+          "called": 1,
+          "parents": [
+            {
+              "total_time": 0.189367,
+              "class": "JsonPrinterTest",
+              "source_file": "test/json_printer_test.rb",
+              "method": "setup",
+              "called": 1,
+              "self_time": 1.0e-05,
+              "line": 15,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 1.0e-05,
+          "line": 7,
+          "children": [
+            {
+              "total_time": 0.189357,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "run_primes",
+              "called": 1,
+              "self_time": 6.0e-06,
+              "line": 46,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.051727,
+          "class": "Fixnum",
+          "source_file": "ruby_runtime",
+          "method": "%",
+          "called": 155239,
+          "parents": [
+            {
+              "total_time": 0.051727,
+              "class": "Integer",
+              "source_file": "ruby_runtime",
+              "method": "upto",
+              "called": 155239,
+              "self_time": 0.051727,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.051727,
+          "line": 0,
+          "children": [
+
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.031291,
+          "class": "Fixnum",
+          "source_file": "ruby_runtime",
+          "method": "==",
+          "called": 155239,
+          "parents": [
+            {
+              "total_time": 0.031291,
+              "class": "Integer",
+              "source_file": "ruby_runtime",
+              "method": "upto",
+              "called": 155239,
+              "self_time": 0.031291,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.031291,
+          "line": 0,
+          "children": [
+
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.002475,
+          "class": "Object",
+          "source_file": "./test/prime.rb",
+          "method": "make_random_array",
+          "called": 2,
+          "parents": [
+            {
+              "total_time": 0.002475,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "run_primes",
+              "called": 2,
+              "self_time": 1.1e-05,
+              "line": 46,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 1.1e-05,
+          "line": 7,
+          "children": [
+            {
+              "total_time": 0.002442,
+              "class": "Array",
+              "source_file": "ruby_runtime",
+              "method": "each_index",
+              "called": 2,
+              "self_time": 0.001495,
+              "line": 0,
+              "wait_time": 0.0
+            },
+            {
+              "total_time": 2.2e-05,
+              "class": "Class",
+              "source_file": "ruby_runtime",
+              "method": "new",
+              "called": 2,
+              "self_time": 6.0e-06,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.002442,
+          "class": "Array",
+          "source_file": "ruby_runtime",
+          "method": "each_index",
+          "called": 2,
+          "parents": [
+            {
+              "total_time": 0.002442,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "make_random_array",
+              "called": 2,
+              "self_time": 0.001495,
+              "line": 7,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.001495,
+          "line": 0,
+          "children": [
+            {
+              "total_time": 0.000524,
+              "class": "Kernel",
+              "source_file": "ruby_runtime",
+              "method": "rand",
+              "called": 2000,
+              "self_time": 0.000524,
+              "line": 0,
+              "wait_time": 0.0
+            },
+            {
+              "total_time": 0.000423,
+              "class": "Array",
+              "source_file": "ruby_runtime",
+              "method": "[]=",
+              "called": 2000,
+              "self_time": 0.000423,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.000524,
+          "class": "Kernel",
+          "source_file": "ruby_runtime",
+          "method": "rand",
+          "called": 2000,
+          "parents": [
+            {
+              "total_time": 0.000524,
+              "class": "Array",
+              "source_file": "ruby_runtime",
+              "method": "each_index",
+              "called": 2000,
+              "self_time": 0.000524,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.000524,
+          "line": 0,
+          "children": [
+
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.000444,
+          "class": "Fixnum",
+          "source_file": "ruby_runtime",
+          "method": "-",
+          "called": 2000,
+          "parents": [
+            {
+              "total_time": 0.000444,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "is_prime",
+              "called": 2000,
+              "self_time": 0.000444,
+              "line": 16,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.000444,
+          "line": 0,
+          "children": [
+
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 0.000423,
+          "class": "Array",
+          "source_file": "ruby_runtime",
+          "method": "[]=",
+          "called": 2000,
+          "parents": [
+            {
+              "total_time": 0.000423,
+              "class": "Array",
+              "source_file": "ruby_runtime",
+              "method": "each_index",
+              "called": 2000,
+              "self_time": 0.000423,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 0.000423,
+          "line": 0,
+          "children": [
+
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 2.2e-05,
+          "class": "Class",
+          "source_file": "ruby_runtime",
+          "method": "new",
+          "called": 2,
+          "parents": [
+            {
+              "total_time": 2.2e-05,
+              "class": "Object",
+              "source_file": "./test/prime.rb",
+              "method": "make_random_array",
+              "called": 2,
+              "self_time": 6.0e-06,
+              "line": 7,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 6.0e-06,
+          "line": 0,
+          "children": [
+            {
+              "total_time": 1.2e-05,
+              "class": "Array",
+              "source_file": "ruby_runtime",
+              "method": "initialize",
+              "called": 2,
+              "self_time": 1.2e-05,
+              "line": 0,
+              "wait_time": 0.0
+            },
+            {
+              "total_time": 4.0e-06,
+              "class": "<Class::Array>",
+              "source_file": "ruby_runtime",
+              "method": "allocate",
+              "called": 2,
+              "self_time": 4.0e-06,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 1.2e-05,
+          "class": "Array",
+          "source_file": "ruby_runtime",
+          "method": "initialize",
+          "called": 2,
+          "parents": [
+            {
+              "total_time": 1.2e-05,
+              "class": "Class",
+              "source_file": "ruby_runtime",
+              "method": "new",
+              "called": 2,
+              "self_time": 1.2e-05,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 1.2e-05,
+          "line": 0,
+          "children": [
+
+          ],
+          "wait_time": 0.0
+        },
+        {
+          "total_time": 4.0e-06,
+          "class": "<Class::Array>",
+          "source_file": "ruby_runtime",
+          "method": "allocate",
+          "called": 2,
+          "parents": [
+            {
+              "total_time": 4.0e-06,
+              "class": "Class",
+              "source_file": "ruby_runtime",
+              "method": "new",
+              "called": 2,
+              "self_time": 4.0e-06,
+              "line": 0,
+              "wait_time": 0.0
+            }
+          ],
+          "self_time": 4.0e-06,
+          "line": 0,
+          "children": [
+
+          ],
+          "wait_time": 0.0
+        }
+      ],
+      "thread_id": 2148446640
+    }
+  ]
+}
