@@ -14,4 +14,4 @@ printer.print(output)
 
 h2. Example
 
-See "the prime number example":examples/prime.json.
+See "the prime number example":ruby_prof-json/examples/prime.json.
